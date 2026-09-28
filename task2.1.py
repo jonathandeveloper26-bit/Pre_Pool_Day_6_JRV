@@ -10,5 +10,4 @@ def sum_integers_one_to_n(n):
 test_sum_integers = 5
 print(f"Test Case: {test_sum_integers}")
 print(f"Sum of Integers: {sum_integers_one_to_n(test_sum_integers)}")
-
 print("\n")
