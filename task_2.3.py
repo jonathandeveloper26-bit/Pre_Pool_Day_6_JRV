@@ -7,7 +7,7 @@ print("Task 2.3: Write a recursive program that lists all the files and director
 def list_files_directories(cwd):
 
     files = [item for item in os.listdir(cwd) if os.path.isfile(os.path.join(cwd, item))]
-    directories = [directory for directory in os.listdir(cwd) if os.path.isdir(os.path.join(cwd, directory))]
+    directories = [item for item in os.listdir(cwd) if os.path.isdir(os.path.join(cwd, item))]
 
     print(f"CWD: {cwd}")
     print(f"Dirs: {directories}")
